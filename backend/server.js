@@ -9,17 +9,17 @@ app.get('/', (request, response) => {
 });
 
 app.get('/api/me', (request, response) => {
-	response.send('{"name": "Arthur Dent", "location": "Earth"}');
+	response.send('{"name": "Steffen Fløttum Leistad", "location": "Brumunddal"}');
 	logger.info('Responded to GET request on /api/me')
 });
 
 app.get('/api/work', (request, response) => {
-	response.send('[{"yearFrom": "2010", "yearTo": "2018", "place": "BBC Radio", "comment": "Was doing stuff"}, {"yearFrom": "2009", "yearTo": "2010", "place": "The coffee shop", "comment": "Making coffee"}]');
+	response.send('[{"yearFrom": "2015", "yearTo": "2019", "place": "Kong Arthur", "comment": "Frontend Developer"}, {"yearFrom": "2009", "yearTo": "2010", "place": "The coffee shop", "comment": "Making coffee"}]');
 	logger.info('Responded to GET request on /api/work')
 });
 
 app.get('/api/education', (request, response) => {
-	response.send('[{"yearFrom": "2005", "yearTo": "2007", "place": "University 1", "comment": "Studying"}, {"yearFrom": "2001", "yearTo": "2004", "place": "Barista academy", "comment": "Made coffee"}]');
+	response.send('[{"yearFrom": "2009", "yearTo": "2012", "place": "Høgskolen i Hedmark - avd. Hamar", "comment": "Bachelor in Virtual Arts & Design"}, {"yearFrom": "2001", "yearTo": "2004", "place": "Barista academy", "comment": "Made coffee"}]');
 	logger.info('Responded to GET request on /api/edu')
 });
 
